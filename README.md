@@ -1,4 +1,3 @@
-Code and Coffee Project:
+# CodeAndCoffee
 
 Project Prototype for our Design Thinking class.
-# CodeAndCoffee
