@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wave_profile_png"
+    android:orientation="vertical"
+    tools:context=".MainActivityProfile">
+
+
+    <ImageView
+        android:id="@+id/beans"
+        android:layout_width="335dp"
+        android:layout_height="399dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.198"
+        app:srcCompat="@drawable/beans" />
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="183dp"
+        android:layout_height="163dp"
+        android:layout_alignStart="@+id/beans"
+        android:layout_alignTop="@+id/beans"
+        android:layout_alignEnd="@+id/beans"
+        android:layout_alignBottom="@+id/beans"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/me_profilepicround"
+        app:layout_constraintBottom_toBottomOf="@+id/beans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/beans"
+        app:layout_constraintVertical_bias="0.394">
+
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/btnback_to_main"
+        android:layout_width="48dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/roundbtn"
+        android:src="@drawable/arrowbackbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="377dp"
+        android:layout_height="51dp"
+        android:background="@drawable/round_back_white10_20"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.645">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coffedoodle" />
+
+        <Switch
+            android:id="@+id/swtich_dark"
+            android:layout_width="313dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="2dp"
+            android:text="Dark mode" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_2"
+        android:layout_width="379dp"
+        android:layout_height="44dp"
+        android:background="@drawable/round_back_white10_20"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bell_badge_outline" />
+
+        <Switch
+            android:id="@+id/switch_2"
+            android:layout_width="313dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="2dp"
+            android:text="Notification" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="135dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#F36D6D"
+        android:text="Edit Profile"
+        android:textColor="#232222"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_pic"
+        app:layout_constraintVertical_bias="0.083" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
